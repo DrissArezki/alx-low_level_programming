@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Main - prints the first 50 Fibinacci numbers
+ * main - prints the first 50 Fibinacci numbers
  * Return: 0 (Success)
  */
 int main(void)
