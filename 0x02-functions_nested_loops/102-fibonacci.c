@@ -19,7 +19,7 @@ int main(void)
 		if (c == 49)
 			printf("\n");
 		else
-			ptinf(",");
+			printf(",");
 	}
 	return (0);
 }
