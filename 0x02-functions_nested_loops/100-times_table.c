@@ -12,7 +12,7 @@ void print_times_table(int n)
 	{
 		for (a = 0; a <= n; a++)
 		{
-			for (b = 0; b < n; b++)
+			for (b = 0; b <= n; b++)
 			{
 				c = b * a;
 				if (b == 0)
