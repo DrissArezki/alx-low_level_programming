@@ -5,7 +5,7 @@
  * @n : int to start with
  * Return:list of numbers from n to 98
  */
-void print_to_98 (int n)
+void print_to_98(int n)
 {
 	int a, b;
 
@@ -23,7 +23,7 @@ void print_to_98 (int n)
 		}
 		}
 	}
-	else if (n >=98)
+	else if (n >= 98)
 	{
 		for (b = n; b >= 98; b--)
 		{
@@ -37,5 +37,5 @@ void print_to_98 (int n)
 		}
 		}
 	}
-}	
+}
 
