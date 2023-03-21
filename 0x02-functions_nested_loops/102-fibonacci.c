@@ -6,7 +6,7 @@
 int main(void)
 {
 	int c;
-	unsigned long f1 = 0, f2 = 0;
+	unsigned long f1 = 0, f2 = 1;
 	unsigned long sum;
 
 	for (c = 0; c < 50; c++)
