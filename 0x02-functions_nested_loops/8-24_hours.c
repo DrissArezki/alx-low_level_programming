@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- * jack_bauer - prints everty minute of the day of Jack Bauer, starting from 00:00 to 23:59
+ * jack_bauer - prints everty minute of the day of Jack Bauer
  * Return: Return the minute of the day
  */
 void jack_bauer(void)
 {
-	int i,j;
-	i=0;
+	int i, j;
+
+	i = 0;
 	while (i < 24)
 	{
 		j = 0;
