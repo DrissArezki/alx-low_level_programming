@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -16,7 +15,7 @@ int main(void)
 
         /*while (i < 10)*/
         /*{*/
-               /* putchar(i);*/
+        /* putchar(i);*/
         /*}*/
 
         printf("Infinite loop avoided! \\o/\n");
