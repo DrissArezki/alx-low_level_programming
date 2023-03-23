@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 /**
  * main - printing numbers from 0 to 100 following the FizzBuzz rule
