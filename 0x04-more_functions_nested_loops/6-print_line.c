@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * print_line - draws a straight line
  * @n: number of times the char _ should be printed
