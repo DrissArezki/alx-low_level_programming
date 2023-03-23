@@ -7,6 +7,7 @@
 void print_line(int n);
 {
 	int n, i;
+
 	for (i = 1; i <= n; i++)
 	{
 		_putchar('_');
