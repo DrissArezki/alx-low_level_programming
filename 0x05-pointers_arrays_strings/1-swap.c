@@ -5,7 +5,7 @@
  * @b: second integer
  * Return: 0 (Success)
  */
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
 	int mem;
 
