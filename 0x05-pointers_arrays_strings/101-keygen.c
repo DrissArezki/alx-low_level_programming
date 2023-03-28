@@ -8,21 +8,22 @@
  */
 int main(void)
 {
-	char key[];
-	int i = 0; s = 0;
-	int n;
+	char key[100];
+	int i = 0, s = 0, n;
 	
 	srand(time(0));
-	for (i < 100; i++)
+
+	for (i = 0; i < 100; i++)
 	{
-	key[i] = rand() % 78;
-	sum = sum + (key[i] + '0');
-	_putchar(key[i] + '0');
+		key[i] = rand() % 78;
+		s = s + (key[i] + '0');
+		putchar(key[i] + '0');
+	
 	if ((2772 - s) - '0' < 78)
 	{
 		n = 2772 - s -'0';
 		s = s + n;
-		_putchar(n +'0');
+		putchar(n +'0');
 		break;
 	}
 	}
