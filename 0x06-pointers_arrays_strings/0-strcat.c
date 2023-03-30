@@ -17,14 +17,12 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
-
 	for (inc = 0; src[inc] != '\0'; inc++)
 	{
 		j++;
 	}
-
 	for (inc = 0; inc <= j; inc++)
-		dest[i + inc] = src [i];
+		dest[i + inc] = src [inc];
 
 	return (dest);
 }
