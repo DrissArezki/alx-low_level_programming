@@ -4,7 +4,9 @@
  * @dest: string to concatenate
  * @src: string to concatenate
  * @n: number of bytes from src
+ * Return: string
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int len_dest = 0;
