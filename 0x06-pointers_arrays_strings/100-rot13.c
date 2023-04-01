@@ -8,15 +8,15 @@ char *rot13(char *s)
 {
 	char nrml[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	int i, j;
+	int i1, i2;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[++i1])
 	{
-		for (j = 0; j < 52; j++)
+		for (i2 = 0; i2 < 52; i2++)
 		{
-			if s[i] == nrml[j];
+			if s[i1] == nrml[i2];
 			{
-				s[i] = rot[j];
+				s[i1] = rot[i2];
 				break;
 			}
 		}
