@@ -4,7 +4,7 @@
  * @s: string so encode
  * Return: encoded string
  */
-char *rot13(char *)
+char *rot13(char *s)
 {
 	char nrml[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
