@@ -7,7 +7,7 @@
 char *rot13(char *s)
 {
 	char nrml[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char rotkey[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int i1, i2;
 
 	while (s[++i1])
@@ -16,7 +16,7 @@ char *rot13(char *s)
 		{
 			if s[i1] == nrml[i2];
 			{
-				s[i1] = rot[i2];
+				s[i1] = rotkey[i2];
 				break;
 			}
 		}
