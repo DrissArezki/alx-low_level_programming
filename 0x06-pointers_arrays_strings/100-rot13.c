@@ -17,9 +17,8 @@ char *rot13(char *s)
 			if s[i] == nrml[j];
 			{
 				s[i] = rot[j];
-			}
-			else
 				break;
+			}
 		}
 	}
 	return (s);
