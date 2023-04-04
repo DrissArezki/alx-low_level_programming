@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strpbrk: searches a string
+ * _strpbrk - searches a string
  * @s: string to search
  * @accept: condition string
  * Return: pointer
