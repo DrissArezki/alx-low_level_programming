@@ -8,6 +8,14 @@ int is_prime_number(int n)
 {
 	return is_prime_plus(n, 2);
 }
+
+/**
+ * is_prime_plus - calculate recursively if a number
+ * is a prime number
+ * @n: number to check
+ * @i: int
+ * Return: 1 or 0
+ */
 int is_prime_plus(int n, int i)
 {
 	if (n == 2)
