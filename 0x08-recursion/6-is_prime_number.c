@@ -6,8 +6,10 @@
  */
 int is_prime_number(int n)
 {
-	int i;
-
+	return is_prime_plus(n, 2);
+}
+int is_prime_plus(int n, int i)
+{
 	if (n == 2)
 		return (1);
 	else if (n < 2 || n % i == 0)
@@ -15,8 +17,5 @@ int is_prime_number(int n)
 	else if (i * i > n)
 		return (1);
 	else
-	{
-		i++;
-		return (is_prime_number(n));
-	}
+		return (is_prime_plus(n, i + 1));
 }
