@@ -17,10 +17,10 @@ int main(int argc, char *argv[])
 		Return(1);
 	}
 
-	int num_1 = atoi(argv[1]);
-	int num_2 = atoi(argv[2]);
-	int mul = num_1 * num_2;
-
+	for (i = 1; i < argc; i++)
+	{
+		mul = mul * atoi(argv[i]);
+	}
 	printf("%d\n", mul);
 	return (0);
 }
