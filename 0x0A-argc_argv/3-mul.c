@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	if (argc < 3)
 	{
 		printf("Error\n");
-		Return (1);
+		Return(1);
 	}
 
 	int num_1 = atoi(argv[1]);
