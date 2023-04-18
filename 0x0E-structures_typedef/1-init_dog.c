@@ -4,11 +4,9 @@
  * @d: dog structure
  * @name: dog's name
  * @age: dog's age
- * @owner: fodg's owner
- *
- * Return: 0
+ * @owner: dog's owner
  */
-void init_dog(struct dog *d, char *nam, float age, char *owner)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
 	{
