@@ -18,6 +18,9 @@ struct dog
 
 /**
  * dog_t - typedef for dog struct
+ *
+ * dog_t is a type def for the structure dog that
+ * contains infos about the dog
  */
 
 typedef struct dog dog_t;
