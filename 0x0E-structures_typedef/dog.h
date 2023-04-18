@@ -3,9 +3,9 @@
 
 /**
  * struct dog - infos of a dog
- * @name: name of the doge
- * @age: age o the dog
- * @owner: owner of that dog
+ * @name: first member
+ * @age: second member
+ * @owner: third member
  *
  * Description: longer description
  */
@@ -18,14 +18,12 @@ struct dog
 
 /**
  * dog_t - typedef for dog struct
- *
- * dog_t is a type def for the structure dog that
- * contains infos about the dog
  */
-
 typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
+
 #endif
