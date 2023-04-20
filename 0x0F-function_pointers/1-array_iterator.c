@@ -8,7 +8,7 @@
  * @action: pointer to the function to use
  * Retunr: function
  */
-void array_iterator(int *array, size_t size, void (*action)(int));
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int i = 0;
 
