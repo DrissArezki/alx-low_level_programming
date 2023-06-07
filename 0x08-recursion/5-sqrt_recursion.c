@@ -6,4 +6,24 @@
  */
 int _sqrt_recursion(int n)
 {
-	if 
+	if (n < 0)
+		return (-1);
+	else
+		return (rec_sqrt_recursion(n, 0));
+}
+
+/**
+ * rec_sqrt_recursion - the recursion for the main function
+ * @n: int to calculate sqrt
+ * @i: int for iteration
+ * Return: square root
+ */
+
+int rec_sqrt_recursion(int n, int i)
+{
+	if (i * i > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (rec_sqrt_recursion(n, i + 1);
+}
