@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int coins[] = {1, 2, 5, 10, 25};
+	int coins[] = 25, 10, 5, 2, 1};
 	int money;
 	int i;
 	int total = 0;
@@ -30,10 +30,10 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < 5 && money >= 0; i++)
 	{
-		while (money >= coins[i])
+		if (money >= coins[i])
 		{
-			total++;
-			money = money - coins[i];
+			total = total + (money / coins[i]);
+			money = money % coins[i];
 		}
 	}
 	printf("%d\n", total);
