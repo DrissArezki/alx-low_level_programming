@@ -25,15 +25,15 @@ int main(int argc, char *argv[])
 	if (money < 0)
 	{
 		printf("0\n");
-		return (1);
+		return (0);
 	}
 
 	for (i = 0; i < 5 && money >= 0; i++)
 	{
 		if (money >= coins[i])
 		{
-			total = total + (money / coins[i]);
-			money = money % coins[i];
+			total++;
+			money = money - coins[i];
 		}
 	}
 	printf("%d\n", total);
