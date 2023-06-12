@@ -13,7 +13,7 @@ char **strtow(char *str);
 int counter(char *str)
 {
 	int i, c;
-	
+
 	int include;
 
 	c = 0;
