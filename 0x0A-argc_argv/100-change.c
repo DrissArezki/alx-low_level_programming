@@ -9,18 +9,18 @@
  */
 int main(int argc, char *argv[])
 {
-	int coins[] = 25, 10, 5, 2, 1};
-	int money;
-	int i;
-	int total = 0;
+	int coins[] = {25, 10, 5, 2, 1};
+
+	int money, i, total;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	
+
 	money = atoi(argv[1]);
+	total = 0;
 
 	if (money < 0)
 	{
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 		if (money >= coins[i])
 		{
 			total++;
-			money = money - coins[i];
+			money -= coins[i];
 		}
 	}
 	printf("%d\n", total);
