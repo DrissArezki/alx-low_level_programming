@@ -9,8 +9,8 @@
 int length_rec(char *s, int len)
 {
 	if (*s == '\0')
-		return len;
-	return length_rec(s + 1, len + 1);
+		return (len);
+	return (length_rec(s + 1, len + 1));
 }
 
 /**
@@ -40,7 +40,6 @@ int is_palindrome_recursive(char *s, int debut, int length)
 int is_palindrome(char *s)
 {
 	int debut = 0;
-	int length = length_rec(s, 0) - 1;;
-	
+	int length = length_rec(s, 0) - 1;
 	return (is_palindrome_recursive(s, debut, length));
 }
