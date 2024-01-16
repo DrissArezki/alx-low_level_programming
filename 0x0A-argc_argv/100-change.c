@@ -16,19 +16,15 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	
 	cents = atoi(argv[1]);
-
 	while (cents > 0)
 	{
 		coins++;
-		
 		if ((cents - 25) >= 0)
 		{
 			cents = cents - 25;
 			continue;
 		}
-		
 		if ((cents - 10) >= 0)
 		{
 			cents = cents - 10;
@@ -44,10 +40,8 @@ int main(int argc, char *argv[])
 			cents = cents - 2;
 			continue;
 		}
-		
 		cents--;
 	}
-	
 	printf("%d\n", coins);
 	return (0);
 }
