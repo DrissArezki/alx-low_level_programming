@@ -1,0 +1,1 @@
+Structures make things easier
