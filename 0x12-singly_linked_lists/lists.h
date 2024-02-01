@@ -1,5 +1,5 @@
-#ifndef LINKS
-#define LINKS
+#ifndef LINKS_H
+#define LINKS_H
 
 #include <stddef.h>
 #include <stdlib.h>
