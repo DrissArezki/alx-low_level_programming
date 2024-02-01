@@ -1,7 +1,7 @@
 #ifndef LINKS_H
 #define LINKS_H
 
-#include <stddef.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -14,13 +14,12 @@
  * Return: single linked list node structure
  */
 
-typedef struct list_t
+typedef struct list_s
 {
 	char *str;
 	unsigned int len;
-	struct list_t *ptr;
-}
-list_t
+	struct list_s *ptr;
+} list_t
 
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
