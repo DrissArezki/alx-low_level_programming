@@ -9,7 +9,7 @@
  * struct list_s - linked lists
  * @str: string
  * @len: length of the string
- * @ptr: points to the next node
+ * @next: points to the next node
  *
  * Return: single linked list node structure
  */
@@ -18,9 +18,11 @@ typedef struct list_s
 {
 	char *str;
 	unsigned int len;
-	struct list_s *ptr;
-} list_t
+	struct list_s *next;
+} list_t;
 
+int _putchar(char c);
+int _strlen(char *s);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
 list_t *add_node(list_t **head, const char *str);
