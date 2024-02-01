@@ -9,14 +9,13 @@
  **/
 size_t list_len(const list_t *p)
 {
-	 size_t s = 0;
-	 
-	 while (p)
-	 {
-		 s++;
-		 p = p->next;
-	 }
-	 
-	 return (s);
-}
+	size_t s = 0;
 
+	while (p)
+	{
+		s++;
+		p = p->next;
+	}
+
+	return (s);
+}
