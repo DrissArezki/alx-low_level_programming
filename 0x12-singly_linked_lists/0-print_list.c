@@ -12,12 +12,12 @@ size_t print_list(const list_t *h)
 	const list_t *p = h;
 	size_t ctr = 0;
 
-	while(p)
+	while (p)
 	{
 		printf("[d] %s\n", p->len, (p->str ? p->str : "[0] (nil)"));
 		ctr++;
 		p = p->ptr;
 	}
 
-	return ctr;
+	return (ctr);
 }
