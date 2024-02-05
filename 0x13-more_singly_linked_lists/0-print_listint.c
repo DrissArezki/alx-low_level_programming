@@ -1,4 +1,4 @@
-#include <lists.h>
+#include "lists.h"
 /**
  * print_listint: print a list
  * @h: variable to use
@@ -14,7 +14,7 @@ size_t print_listint(const listint_t *h)
 	{
 		printf("%d\n", temp->n);
 		length++;
-		temp = temp->next
+		temp = temp->next;
 	}
 	return (length);
 }
