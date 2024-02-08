@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * get_endianess - endian
+ * get_endianness - endian
  * Return: endian
  */
 int get_endianness(void)
@@ -13,5 +13,4 @@ int get_endianness(void)
 		return (1);
 	else
 		return (0);
-}
 }
