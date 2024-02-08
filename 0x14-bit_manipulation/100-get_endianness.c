@@ -1,16 +1,14 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
- * get_endianness - endiaaaan
- * Return 1 or 0, endian
- */
+ ** get_endianness - check the code
+ ** Return: Always 0.
+ **/
 int get_endianness(void)
 {
-	unsigned int number = 1;
-
-	if (*((char *)&number) == 1)
-		return (1);
-	else
-		return (0);
+	unsigned int num = 1;
+	unsigned char *byte_ptr = (unsigned char *)&num;
+	
+	return ((byte_ptr[0] == 1) ? 1 : 0);
 }
