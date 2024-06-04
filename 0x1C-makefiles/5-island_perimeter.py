@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 '''Defining the island perim of the measure.'''
 
-def island_perimeter(grid)
+def island_perimeter(grid):
 '''Return the island.
+
+Comment.
 
 '''
 
