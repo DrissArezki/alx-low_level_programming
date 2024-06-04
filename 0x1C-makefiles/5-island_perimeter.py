@@ -2,7 +2,10 @@
 '''Defining the island perim of the measure.'''
 
 def island_perimeter(grid)
-'''Return the island.'''
+'''Return the island.
+
+'''
+
 width = len(grid[0])
 height = len(grid)
 edges = 0
@@ -16,4 +19,4 @@ for i in range(height):
                 edges += 1
             if (i > 0 and grid[i - 1][j] == 1):
                 edges += 1
-return size * 4 - edges * 2
+return (size * 4 - edges * 2)
